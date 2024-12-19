@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url(../Media/fondo.jpg) no-repeat center top; /* Centra la imagen y la alinea arriba */
+    background-size: cover; /* Asegura que la imagen cubra todo el ancho de la pantalla */
+    background-attachment: scroll; /* Permite que el fondo se desplace al hacer scroll */
+    color: white;
+    margin: 0; /* Elimina márgenes para un ajuste completo */
+    min-height: 100vh; /* Agrega suficiente espacio vertical para el scroll */
+}
+
+nav {
+    background-color: #2a2a2a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    position: sticky;
+    top:0px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.nav-links a.active {
+    color: white;
+    pointer-events: none;
+}
+
+.nav-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-register {
+    background-color:#3f3f3f;
+    color: #a0a0a0;
+}
+
+.btn-register:hover {
+    background-color:#383838;
+}
+
+.btn-login {
+    background-color: #ffd700;
+    color: #1a1a1a;
+}
+
+.btn-login:hover{
+    background-color: #e6c200;
+}
+
+.main-content {
+    padding: 4rem 2rem;
+    text-align: center;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    background-color: black;
+    border-radius: 8px;
+    background: rgba(46, 43, 43, 0.7);
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: none;
+    padding: 0;
+}
+
+.icon-container {
+    background: rgba(87, 87, 87, 0.4);
+    padding: 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon {
+    font-size: 30px;
+}
+
+.stat-info {
+    text-align: left;
+}
+
+.stat-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+/* ESTILOS PARA FORMULARIO */
+
+.register-form {
+    background: rgba(46, 43, 43, 0.7);
+    padding: 2rem;
+    border-radius: 8px;
+    width: 400px;
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #a0a0a0;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    background: rgba(87, 87, 87, 0.4);
+    color: white;
+    font-size: 1rem;
+}
+
+.form-group input::placeholder {
+    color: #888;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ffd700;
+    color: #1a1a1a;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #e6c200;
+}
