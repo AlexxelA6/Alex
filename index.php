@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROSARIUM</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../../Styles/estilos.css">
 </head>
 
 <body>
@@ -78,20 +77,6 @@
         </div>
     </div>
 
-    <script type="module">
-        import {
-            generarOpcionesMenuUsuario,
-            eliminarHijos
-        } from '../../Scripts/herramientas.js';
-
-        document.addEventListener('DOMContentLoaded', () => {
-
-            //Genera de forma dinamica las opciones del menu de navegación
-            generarOpcionesMenuUsuario('Inicio');
-        });
-
-        //eliminarHijos('nav-right');
-    </script>
 
 </body>
 
